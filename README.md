@@ -29,13 +29,11 @@
 
 ### Opsi B: Menggunakan PHP Built-in Web Server (Terminal / CMD)
 1. Buka terminal atau Command Prompt, lalu arahkan ke dalam folder proyek:
-   ```bash
+   bash
    cd uts-pemweb-025A00200003
-   ```
 2. Jalankan perintah server bawaan PHP:
-   ```bash
+   bash
    php -S localhost:8000
-   ```
 3. Buka browser dan akses `http://localhost:8000/index.php`.
 
 ## 4. Daftar Fitur, File, dan Nama Fungsi Buatan Sendiri
@@ -71,7 +69,8 @@ File tangkapan layar disimpan di dalam folder `screenshots/`:
    Menampilkan informasi profil **FreshClean Laundry**, ilustrasi mesin cuci dengan atribut `alt` bermakna, keunggulan layanan, serta informasi jam operasional, alamat outlet, dan kontak.  
    - Lokasi berkas: `screenshots/profil.png`  
    
-
+![Tangkapan Layar Katalog](screenshots/katalog.png)
+![Tangkapan Layar Profil](screenshots/profil.png)
 2. **Tampilan Halaman Katalog Layanan & Fitur Sorting (`katalog.php`)**  
    Menampilkan kartu ringkasan statistik tarif, kontrol dropdown pengurutan (*sorting*), dan daftar kartu layanan lengkap (8 item layanan) dengan badge warna kategori pengerjaan.  
    - Lokasi berkas: `screenshots/katalog.png`  
