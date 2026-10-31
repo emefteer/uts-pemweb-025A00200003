@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <!-- Background Glow & Bubbles -->
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f9ff" />
+    </linearGradient>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Decorative Background Circles -->
+  <circle cx="200" cy="200" r="170" fill="#e0f2fe" opacity="0.45" />
+  <circle cx="340" cy="90" r="18" fill="#bae6fd" opacity="0.6" />
+  <circle cx="60" cy="130" r="12" fill="#bae6fd" opacity="0.5" />
+  <circle cx="75" cy="300" r="22" fill="#e0f2fe" opacity="0.7" />
+  <circle cx="330" cy="290" r="14" fill="#bae6fd" opacity="0.6" />
+
+  <!-- Washing Machine Body with Drop Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Main Frame -->
+    <rect x="90" y="60" width="220" height="270" rx="28" fill="url(#bodyGrad)" stroke="#cbd5e1" stroke-width="3" />
+    
+    <!-- Top Panel Divider -->
+    <line x1="90" y1="120" x2="310" y2="120" stroke="#e2e8f0" stroke-width="2.5" />
+
+    <!-- Detergent Drawer -->
+    <rect x="110" y="80" width="55" height="26" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+    <line x1="122" y1="93" x2="153" y2="93" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Control Knob -->
+    <circle cx="210" cy="93" r="13" fill="#ffffff" stroke="#0284c7" stroke-width="2.5" />
+    <circle cx="210" cy="93" r="6" fill="#0284c7" />
+    <line x1="210" y1="84" x2="210" y2="88" stroke="#0284c7" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Digital Display -->
+    <rect x="245" y="82" width="45" height="22" rx="4" fill="#0f172a" />
+    <text x="267" y="97" font-family="monospace" font-size="11" fill="#38bdf8" text-anchor="middle" font-weight="bold">30:00</text>
+
+    <!-- Outer Door Ring -->
+    <circle cx="200" cy="220" r="76" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Inner Door Chrome -->
+    <circle cx="200" cy="220" r="68" fill="#ffffff" stroke="#0284c7" stroke-width="4" />
+    <!-- Glass Porthole -->
+    <circle cx="200" cy="220" r="58" fill="url(#drumGrad)" />
+
+    <!-- Swirling Water Effect -->
+    <path d="M 148 230 Q 170 210 200 230 T 252 230 A 58 58 0 0 1 148 230 Z" fill="url(#waterGrad)" />
+    <path d="M 152 240 Q 180 220 200 240 T 248 240 A 58 58 0 0 1 152 240 Z" fill="#ffffff" opacity="0.3" />
+
+    <!-- Glass Reflection Highlight -->
+    <path d="M 160 185 A 50 50 0 0 1 235 180" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Door Handle -->
+    <rect x="260" y="210" width="8" height="20" rx="3" fill="#64748b" />
+
+    <!-- Machine Feet -->
+    <rect x="110" y="328" width="24" height="10" rx="4" fill="#64748b" />
+    <rect x="266" y="328" width="24" height="10" rx="4" fill="#64748b" />
+  </g>
+
+  <!-- Floating Soap Bubbles & Sparkles -->
+  <g fill="#38bdf8" opacity="0.75">
+    <circle cx="120" cy="45" r="9" />
+    <circle cx="118" cy="43" r="3" fill="#ffffff" />
+    <circle cx="140" cy="30" r="6" />
+    <circle cx="270" cy="42" r="11" />
+    <circle cx="267" cy="39" r="3.5" fill="#ffffff" />
+    <circle cx="295" cy="50" r="7" />
+  </g>
+
+  <!-- Fresh Clean Sparkle Stars -->
+  <g fill="#0284c7">
+    <!-- Star 1 -->
+    <path d="M 80 80 Q 80 92 68 92 Q 80 92 80 104 Q 80 92 92 92 Q 80 92 80 80 Z" />
+    <!-- Star 2 -->
+    <path d="M 325 150 Q 325 160 315 160 Q 325 160 325 170 Q 325 160 335 160 Q 325 160 325 150 Z" />
+    <!-- Star 3 -->
+    <path d="M 125 295 Q 125 303 117 303 Q 125 303 125 311 Q 125 303 133 303 Q 125 303 125 295 Z" opacity="0.7" />
+  </g>
+</svg>
+

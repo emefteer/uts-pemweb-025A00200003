@@ -2,34 +2,16 @@
 
 declare(strict_types=1);
 
-/**
- * Helper Functions - FreshClean Laundry
- * Berisi semua fungsi pendukung untuk katalog.php dan index.php
- */
-
-/**
- * Escape output HTML untuk mencegah XSS.
- */
 function e(string $value): string
 {
     return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
-/**
- * Format angka ke format Rupiah.
- * Contoh: 8000 => "Rp 8.000"
- */
 function formatRupiah(int|float $angka): string
 {
     return 'Rp ' . number_format((float) $angka, 0, ',', '.');
 }
 
-/**
- * Mengembalikan informasi badge (label & kelas CSS) berdasarkan level layanan.
- *
- * @param string $level Level layanan: 'reguler', 'express', 'flash', 'premium'
- * @return array{label: string, kelas: string}
- */
 function getBadgeInfo(string $level): array
 {
     return match ($level) {
@@ -40,13 +22,7 @@ function getBadgeInfo(string $level): array
     };
 }
 
-/**
- * Mengurutkan daftar layanan berdasarkan kriteria tertentu.
- *
- * @param array<int, array<string, mixed>> $daftar      Array data layanan dari data.php
- * @param string                           $kriteria    Kriteria sort: 'harga_asc', 'harga_desc', 'durasi_asc', 'nama_asc', atau 'default'
- * @return array<int, array<string, mixed>>
- */
+
 function urutkanLayanan(array $daftar, string $kriteria): array
 {
     usort($daftar, function (array $a, array $b) use ($kriteria): int {
@@ -62,12 +38,6 @@ function urutkanLayanan(array $daftar, string $kriteria): array
     return $daftar;
 }
 
-/**
- * Menghitung ringkasan statistik dari daftar layanan.
- *
- * @param array<int, array<string, mixed>> $daftar Array data layanan
- * @return array{total_layanan: int, harga_termurah: int|float, harga_tertinggi: int|float, rata_rata_harga: float}
- */
 function hitungRingkasanLayanan(array $daftar): array
 {
     if (empty($daftar)) {

@@ -14,8 +14,14 @@ require_once __DIR__ . '/functions.php';
 
   <header>
     <div class="container navbar">
-      <a href="index.php" class="logo">Fresh<span>Clean</span></a>
-      <nav>
+      <a href="index.php" class="brand-box" aria-label="FreshClean Laundry Beranda">
+        <img src="assets/washing-machine.svg" alt="Logo FreshClean" class="navbar-logo">
+        <div class="brand-text">
+          <span class="logo">Fresh<span>Clean</span></span>
+          <span class="tagline">Bersih, Wangi, &amp; Cepat</span>
+        </div>
+      </a>
+      <nav aria-label="Navigasi Utama">
         <ul class="nav-links">
           <li><a href="index.php" class="active">Profil Usaha</a></li>
           <li><a href="katalog.php">Katalog Layanan</a></li>

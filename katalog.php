@@ -15,15 +15,21 @@ $ringkasan = hitungRingkasanLayanan($daftarLayanan);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katalog Layanan &amp; Tarif - FreshClean Laundry</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
   <header>
-    <div class="container flex-between">
-      <a href="index.php" class="brand">FreshClean Laundry</a>
+    <div class="container navbar">
+      <a href="index.php" class="brand-box" aria-label="FreshClean Laundry Beranda">
+        <img src="assets/washing-machine.svg" alt="Logo FreshClean" class="navbar-logo">
+        <div class="brand-text">
+          <span class="logo">Fresh<span>Clean</span></span>
+          <span class="tagline">Bersih, Wangi, &amp; Cepat</span>
+        </div>
+      </a>
       <nav aria-label="Navigasi Utama">
-        <ul class="nav-menu">
+        <ul class="nav-links">
           <li><a href="index.php">Profil Usaha</a></li>
           <li><a href="katalog.php" class="active">Katalog Layanan</a></li>
         </ul>
