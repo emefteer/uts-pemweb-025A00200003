@@ -288,7 +288,6 @@ footer {
   }
 }
 
-
 @media (max-width: 680px) {
   .navbar {
     flex-direction: column;
