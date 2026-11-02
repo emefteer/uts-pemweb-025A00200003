@@ -60,7 +60,7 @@ $daftarLayanan = [
     [
         'id'          => 6,
         'nama'        => 'Deep Clean Sepatu Sneakers',
-        'kategori'    => 'Sepatu & Tas',
+        'kategori'    => 'satuan',
         'harga'       => 30000,
         'satuan'      => 'pasang',
         'durasi_hari' => 2,
@@ -70,7 +70,7 @@ $daftarLayanan = [
     [
         'id'          => 7,
         'nama'        => 'Cuci Tas Ransel & Carrier',
-        'kategori'    => 'Sepatu & Tas',
+        'kategori'    => 'satuan',
         'harga'       => 28000,
         'satuan'      => 'pcs',
         'durasi_hari' => 3,
@@ -79,8 +79,8 @@ $daftarLayanan = [
     ],
     [
         'id'          => 8,
-        'nama'        => 'Cuci Karpet & Permadani Ruangan',
-        'kategori'    => 'Rumah Tangga',
+        'nama'        => 'Cuci Karpet ',
+        'kategori'    => 'ukuran',
         'harga'       => 15000,
         'satuan'      => 'm2',
         'durasi_hari' => 4,

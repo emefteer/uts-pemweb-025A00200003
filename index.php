@@ -64,8 +64,8 @@ require_once __DIR__ . '/functions.php';
       <div class="feature-card" style="text-align: center;">
         <h2>Jam Operasional & Lokasi</h2>
         <p style="margin: 0.5rem 0 1rem 0;">Buka setiap hari: <strong>07.00 - 21.00 WIB</strong></p>
-        <p>Alamat: Jl. Sukoharjo Makmur No. 45, Jawa Tengah</p>
-        <p>WhatsApp Hotline: <strong>0812-3456-7890</strong></p>
+        <p>Alamat: Ceperrejo, Toriyo, Sukoharjo, Jawa Tengah</p>
+        <p>WhatsApp Hotline: <strong>081916612375</strong></p>
       </div>
     </section>
   </main>

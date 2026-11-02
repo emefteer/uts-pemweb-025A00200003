@@ -176,7 +176,7 @@ header h1, .brand-text h1, .logo, .brand {
 /* Grid Serbaguna (Mendukung .grid, .features-grid, .stats-bar, .katalog-grid) */
 .grid, .features-grid, .stats-bar, .katalog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.15rem;
   margin: 1.25rem 0;
 }
@@ -247,11 +247,17 @@ header h1, .brand-text h1, .logo, .brand {
 
 .card-footer {
   border-top: 1px solid #dbe2ea;
-  margin-top: 1rem;
+  margin-top: auto;
   padding-top: 0.75rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+}
+
+.price, .duration {
+  white-space: nowrap;
 }
 
 .price { font-size: 1.15rem; font-weight: 800; color: #0077b6; }

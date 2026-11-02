@@ -15,7 +15,7 @@ $ringkasan = hitungRingkasanLayanan($daftarLayanan);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katalog Layanan &amp; Tarif - FreshClean Laundry</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -40,7 +40,7 @@ $ringkasan = hitungRingkasanLayanan($daftarLayanan);
   <main class="container">
     <section>
       <h1>Katalog Paket &amp; Tarif Laundry</h1>
-      <p>Daftar lengkap layanan pencucian pakaian, sepatu, tas, dan perlengkapan rumah tangga.</p>
+      <p>Daftar lengkap layanan pencucian pakaian, sepatu, tas, dan karpet.</p>
     </section>
 
     <section aria-label="Ringkasan Statistik Tarif">
@@ -98,9 +98,9 @@ $ringkasan = hitungRingkasanLayanan($daftarLayanan);
                 <h3><?= e($layanan['nama']); ?></h3>
                 <p><?= e($layanan['deskripsi']); ?></p>
               </div>
-              <div class="card-footer flex-between">
+              <div class="card-footer">
                 <span class="price"><?= e(formatRupiah($layanan['harga'])); ?> <small>/ <?= e($layanan['satuan']); ?></small></span>
-                <small><?= e((string) $layanan['durasi_hari']); ?> Hari</small>
+                <small class="duration"><?= e((string) $layanan['durasi_hari']); ?> Hari</small>
               </div>
             </article>
           <?php endforeach; ?>
