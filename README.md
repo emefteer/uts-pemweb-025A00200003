@@ -69,12 +69,12 @@ File tangkapan layar disimpan di dalam folder `screenshots/`:
 
 1. **Tampilan Halaman Profil Usaha (`index.php`)**  
    Menampilkan informasi profil **FreshClean Laundry**, ilustrasi banner layanan dengan atribut `alt` bermakna, serta kartu informasi jam buka, alamat, dan kontak.  
-   - Lokasi berkas: '[screenshots/profil.png]'  
+   - Lokasi berkas: ['screenshots/profil.png']  
    
 
 2. **Tampilan Halaman Katalog Layanan & Fitur Sorting (`katalog.php`)**  
    Menampilkan kartu ringkasan statistik tarif, kontrol dropdown pengurutan (*sorting*), dan daftar kartu layanan lengkap (8 item layanan) dengan badge warna kategori pengerjaan.  
-   - Lokasi berkas: '[screenshots/katalog.png]'
+   - Lokasi berkas: ['screenshots/katalog.png']
    
 
 ## 7. Sumber Referensi dan Catatan Pemakaian AI
