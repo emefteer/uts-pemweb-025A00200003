@@ -87,3 +87,4 @@ File tangkapan layar disimpan di dalam folder `screenshots/`:
 ### Catatan Pemakaian AI
 - **Bagian yang Dibantu AI**: Diskusi *brainstorming* struktur atribut array paket laundry, penyusunan logika fungsi pengurutan `usort()` dan ekspresi `match` pada `functions.php`, serta penyederhanaan desain tata letak pada `style.css`.
 - **pembuatan logo**
+- **membantu membenarkan code**
