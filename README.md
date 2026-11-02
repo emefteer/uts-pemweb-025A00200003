@@ -69,12 +69,12 @@ File tangkapan layar disimpan di dalam folder `screenshots/`:
 
 1. **Tampilan Halaman Profil Usaha (`index.php`)**  
    Menampilkan informasi profil **FreshClean Laundry**, ilustrasi banner layanan dengan atribut `alt` bermakna, serta kartu informasi jam buka, alamat, dan kontak.  
-   (Lokasi berkas): ['screenshots/profil.png'])  
+   Lokasi berkas: [Halaman profil](screenshots/profil.png)
    
 
 2. **Tampilan Halaman Katalog Layanan & Fitur Sorting (`katalog.php`)**  
    Menampilkan kartu ringkasan statistik tarif, kontrol dropdown pengurutan (*sorting*), dan daftar kartu layanan lengkap (8 item layanan) dengan badge warna kategori pengerjaan.  
-   (Lokasi berkas): ['screenshots/katalog.png']
+   Lokasi berkas: [Halaman katalog](screenshots/katalog.png)
    
 
 ## 7. Sumber Referensi dan Catatan Pemakaian AI
@@ -86,4 +86,4 @@ File tangkapan layar disimpan di dalam folder `screenshots/`:
 
 ### Catatan Pemakaian AI
 - **Bagian yang Dibantu AI**: Diskusi *brainstorming* struktur atribut array paket laundry, penyusunan logika fungsi pengurutan `usort()` dan ekspresi `match` pada `functions.php`, serta penyederhanaan desain tata letak pada `style.css`.
-- **Cara Memeriksa & Memverifikasi**: Seluruh kode dijalankan dan diuji langsung pada web server lokal (`localhost`), setiap fungsi dan perhitungan statistik (**jumlah layanan 8 paket**, **tarif termurah Rp 8.000**, **tarif tertinggi Rp 35.000**, dan **rata-rata tarif Rp 22.125** dari total Rp 177.000 / 8) telah dicek ulang secara manual agar sesuai 100% dengan data pada `data.php`, serta setiap baris kode telah dipelajari untuk persiapan demo langsung.
+- **pembuatan logo**
