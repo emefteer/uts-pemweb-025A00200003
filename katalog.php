@@ -5,7 +5,16 @@ declare(strict_types=1);
 require_once __DIR__ . '/data.php';
 require_once __DIR__ . '/functions.php';
 
-$kriteriaSort = isset($_GET['sort']) ? (string) $_GET['sort'] : 'default';
+// 1. Buat daftar opsi pengurutan yang sah (Whitelist)
+$opsiValid = ['default', 'harga_asc', 'harga_desc', 'durasi_asc', 'nama_asc'];
+
+// 2. Ambil input dari URL jika ada
+$sortInput = isset($_GET['sort']) ? (string) $_GET['sort'] : 'default';
+
+// 3. Validasi ketat dengan in_array(): jika tidak sah, paksa kembali ke 'default'
+$kriteriaSort = in_array($sortInput, $opsiValid, true) ? $sortInput : 'default';
+
+// 4. Jalankan fungsi seperti biasa
 $daftarTersortir = urutkanLayanan($daftarLayanan, $kriteriaSort);
 $ringkasan = hitungRingkasanLayanan($daftarLayanan);
 ?>
